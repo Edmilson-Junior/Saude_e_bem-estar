@@ -428,8 +428,9 @@ body{
 }
 
 .novo {
+    cursor: pointer;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 15rem auto;
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
