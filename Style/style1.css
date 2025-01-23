@@ -1,23 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Explora&family=Grey+Qo&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
-    text-transform: none;
+body{
+    background-image: url('../Multimedia/5.png');
+    background-repeat: repeat;
 }
 
 .head{
     position: fixed;
     width: 100%;
     height: 10vh;
-    border-bottom: 0.7px;
-    box-shadow: 0px 8px 15px #ccc;
     z-index: 999;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .head nav{
@@ -34,25 +36,36 @@ a{
     list-style-type: none;
 }
 
+.head nav li a{
+    text-decoration: none;
+    color: black;
+}
+
 .head .nav_btn{
     width: 8rem;
     height: 40px;
     text-align: center;
     font-size: 1.3rem;
     border-radius: 4px;
-    background-color: #bbb;
+    background-color: #e3ccd9;
     padding: 8px;
     transition: 0.5s ease-in-out;
     transform-origin: center center;
+    border: 1px solid #fff;
 }
 
 .head .nav_btn:hover{
     transition: 0.5s ease-in-out;
     transform-origin: center center;
     width: 10rem;
-    height: 42px;
+    height: 44px;
+    color: #fff;
+    border-radius: 8px;
     font-size: 1.6rem;
-    background-color: #ddd;
+    background-color: #7d5373;
+    a{
+        color: #fff;
+    }
 }
 
 .saude{
@@ -61,25 +74,154 @@ a{
 }
 
 #home{
+    background-image: url('../Multimedia/2.png');
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #home h1{
-    font-size: 5rem;
+    font-size: 8rem;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
+    color: #7d5373;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+    transform-origin: center center;
+}
+
+#home h1:hover{
+    font-size: 9rem;
+    text-shadow: 0 10px 10px #ffffff;
+    transition: 0.5s ease-in-out;
+    transform-origin: center center;
 }
 
 #home p{
-    width: 30%;
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    color: #7d5373;
+    font-size: 1.5rem;
+    font-family: "EB Garamond", serif;
     position: absolute;
-    top: 60%;
-    left: 50%;
+    font-weight: 900;
+    top: 65%;
+    left: 40%;
 }
+
+.hidrata{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidrata .hidra{
+    width: 90%;
+    height: 90%;
+    color: #7d5373;
+    background-image: url('../Multimedia/4.png');
+    background-size: cover;
+}
+
+.hidrata .hidra h2{
+    font-size: 2.6rem;
+    padding: 20px 0px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+}
+
+.v_ativ1{
+    width: 100%;
+    height: 70%;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+    transform-origin: center center;
+}
+
+.v_ativ1 video{
+    width: 24%;
+    height: 99%;
+    border: 2px solid #cca3a7;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px #bbb;
+}
+
+.v_ativ1 .t_ativ1{
+    width: 60%;
+    font-size: 2rem;
+    color: #7d5373;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+    transform-origin: center center;
+    display: flex;
+    align-items: center;
+}
+
+.alongamento{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.alongamento .alonga{
+    width: 90%;
+    height: 90%;
+    background-image: url('../Multimedia/4.png');
+    background-size: cover;
+}
+
+.alongamento .alonga h2{
+    font-size: 2.6rem;
+    padding: 20px 0px;
+    color: #7d5373;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+}
+
+.v_ativ2{
+    width: 100%;
+    height: 100%;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+    transform-origin: center center;
+}
+
+.v_ativ2 video{
+    width: 40%;
+    height: 80%;
+    border: 2px solid #cca3a7;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px #bbb;
+}
+
+.v_ativ2 .t_ativ2{
+    width: 60%;
+    font-size: 2rem;
+    color: #7d5373;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+    transform-origin: center center;
+    display: flex;
+    align-items: center;
+}
+
+
 
 
 
