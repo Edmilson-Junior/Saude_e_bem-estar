@@ -125,10 +125,10 @@
                 <div class="social-links">
                   <h3>Ou fale conosco pelas redes sociais:</h3>
                   <a href="https://www.instagram.com/seuusuario" target="_blank" class="instagram-link">
-                    <img src="instagram-icon.png" alt="Instagram" /> Instagram
+                    <img src="Multimedia/insta.jpeg" alt="Instagram" /> Instagram
                   </a>
                   <a href="https://wa.me/seunumerowhatsapp" target="_blank" class="whatsapp-link">
-                    <img src="whatsapp-icon.png" alt="WhatsApp" /> WhatsApp
+                    <img src="Multimedia/whatsApp.png" alt="WhatsApp" /> WhatsApp
                   </a>
                 </div>
               </div>
@@ -178,7 +178,7 @@
                 <h3>Redes Sociais</h3>
                 <p>Nos siga nas redes sociais:</p>
                 <div class="social-icons">
-                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook"></a>
+                    <a href="#"><img src="Multimedia/insta.jpeg" alt="Facebook"></a>
                     <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram"></a>
                     <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter"></a>
                     <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn"></a>
@@ -190,5 +190,21 @@
         </div>
     </footer>
     
+    <script>
+        const header = document.querySelector(".head");
+    let lastScrollY = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > lastScrollY) {
+            header.classList.add("minimized");
+        } else if (currentScrollY <= 0) {
+            header.classList.remove("minimized");
+        }
+
+        lastScrollY = currentScrollY;
+    });
+    </script>
 </body>
 </html>

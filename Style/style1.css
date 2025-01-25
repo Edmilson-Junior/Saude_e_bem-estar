@@ -22,6 +22,15 @@ body{
     cursor: pointer;
 }
 
+.minimized{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    justify-content: flex-start;
+    padding-left: 20px;
+    background-color: #333333;
+}
+
 .head nav{
     width: 60%;
     height: 100%;
