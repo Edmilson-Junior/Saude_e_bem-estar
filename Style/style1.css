@@ -22,13 +22,20 @@ body{
     cursor: pointer;
 }
 
+.menu{
+    display: none;
+}
+
 .minimized{
     width: 80px;
     height: 80px;
     border-radius: 50%;
     justify-content: flex-start;
-    padding-left: 20px;
+    padding-left: 10px;
     background-color: #333333;
+    .nav_btn{
+        display: none;
+    }
 }
 
 .head nav{
@@ -561,3 +568,10 @@ footer {
 .footer-bottom p {
     margin: 0;
 }
+
+@media screen and (max-width: 460px) {
+    
+}
+
+
+
